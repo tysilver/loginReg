@@ -1,0 +1,1 @@
+This is a basic login and registration created by Tyler Silverman using the full MEAN stack, and includes but is not limited to UI Router, passport, custom directives, and validations.  Minimal bootstrapping is used for basic styling purposes.
