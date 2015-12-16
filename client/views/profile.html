@@ -1,0 +1,15 @@
+<a ui-sref="home" ng-click="logout()">Logout</a>
+<h1>{{title}}</h1>
+<div>
+    <div>
+        <div>
+            <h3>Local</h3>
+            <p>
+                <strong>id</strong>: {{current_user._id}}<br>
+                <strong>email</strong>: {{current_user.local.email}}<br>
+                <strong>password</strong>: {{current_user.local.password}}<br>
+                <strong>created_at</strong>: {{userDate}}
+            </p>
+        </div>
+    </div>
+</div>

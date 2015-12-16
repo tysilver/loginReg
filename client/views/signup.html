@@ -1,0 +1,10 @@
+<div>
+    <h1>{{title}}</h1>
+    <p style="color: red" ng-bind="message"></p>
+    <form>
+    	<p style="display: block">E-mail: <input type="text" ng-model="newUser.email"></p>
+    	<p style="display: block">Password: <input type="password" ng-model="newUser.password"></p>
+    	<input type="submit" value="Sign Up" ng-click="addUser()">
+    </form>
+    <p>or <a href="#/login">Log In here</a></p>
+</div>

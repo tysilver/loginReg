@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<title>Proj2</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- REQUIRING JQUERY -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!-- Bootstrap -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!-- REQUIRING ANGULAR -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"/></script>
+		<!-- REQUIRING UI-ROUTER -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+		<!-- SCRIPTS FILE - APP CONFIGURATION -->
+		<script src="/scripts.js"></script>
+		<!-- HOME CONTROLLER - LINKS TO VIEWS/HOME.HTML -->
+		<script src="/controllers/homeCtrl.js"></script>
+		<!-- ABOUT CONTROLLER - LINKS TO VIEWS/ABOUT.HTML -->
+		<script src="/controllers/aboutCtrl.js"></script>
+		<!-- LOGIN CONTROLLER - LINKS TO VIEWS/LOGIN.HTML -->
+		<script src="/controllers/loginCtrl.js"></script>
+		<!-- SIGNUP CONTROLLER - LINKS TO VIEWS/SIGNUP.HTML -->
+		<script src="/controllers/signupCtrl.js"></script>
+		<!-- SIGNUP CONTROLLER - LINKS TO VIEWS/SIGNUP.HTML -->
+		<script src="/controllers/profileCtrl.js"></script>
+		<!-- MAIN FACTORY -->
+		<script src="/services/usersFactory.js"></script>
+		<!-- ALL OF MY DIRECTIVES FOR THIS APP -->
+		<script src="/directives/myDirectives.js"></script>
+		<!-- MY RANDOM FUNCTIONS -->
+		<script src="/functions.js"></script>
+		<style>
+			.mainPageClass{
+				margin-top: 5px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<!--start row-->
+			<div class="row">
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-10">
+					<!-- Banner goes here -->
+					<div class="jumbotron">
+					    <h1>My Login and Registration</h1>      
+					    <p>Using Angular.js, Node.js/Express, and Mongo, with Passport and UIRouter (includes custom directives).</p>
+					    <div class="row">
+							<div class="col-md-4">
+							</div>
+							<div class="col-md-4">
+							</div>
+							<div class="col-md-4">
+								<my-nav></my-nav>
+							</div>
+						</div>
+				    </div>
+				</div>
+				<div class="col-md-1">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+
+				<div class="col-md-4">
+					<div  class="mainPageClass">
+						<!-- NECESSARY FOR UI-ROUTER TO WORK -->
+						<div ui-view></div>
+						<my-footer></my-footer>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+				</div>
+			</div>
+			<!--end row-->
+
+		</div>
+	</body>
+</html>
